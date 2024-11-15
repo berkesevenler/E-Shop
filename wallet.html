@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 In 1 Wallet with Signature Canvas Interior</title>
+    <link rel="stylesheet" href="css/wallet.css" />
+  </head>
+  <body>
+    <div id="time"></div>
+    <div class="container">
+      <h1>3 In 1 Wallet with Signature Canvas Interior</h1>
+      <img
+        class="card-img-top center-image"
+        src="https://coach.scene7.com/is/image/Coach/cp442_lhn19_a0?$mobileProductTile$"
+        alt="3 In 1 Wallet with Signature Canvas Interior"
+      />
+      <section class="overview">
+        <button class="fancy-button" onclick="addToCart3('Wallet', 18)">
+          Add to Cart
+        </button>
+        <h2>Overview</h2>
+        <p>
+          The 3 In 1 Wallet with Signature Canvas Interior offers style,
+          functionality, and top-notch craftsmanship. Designed for modern
+          individuals who value elegance and convenience, this versatile wallet
+          adapts to any occasion. Its unique three-in-one design allows for
+          customized use, making it both practical and stylish.
+        </p>
+      </section>
+
+      <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+          <h3>Material and Craftsmanship</h3>
+          <ul>
+            <li>
+              <strong>Premium Leather Exterior:</strong> Crafted from
+              high-quality leather, the exterior is durable, soft, and
+              sophisticated.
+            </li>
+            <li>
+              <strong>Signature Canvas Interior:</strong> The interior features
+              luxurious signature canvas, adding an elegant touch.
+            </li>
+            <li>
+              <strong>Handcrafted Precision:</strong> Each wallet is
+              meticulously handcrafted by skilled artisans for exceptional
+              quality.
+            </li>
+            <li>
+              <strong>Double Stitching:</strong> Reinforced double stitching
+              enhances durability and adds a polished finish.
+            </li>
+          </ul>
+        </div>
+        <div class="feature">
+          <h3>Versatile 3 In 1 Design</h3>
+          <ul>
+            <li>
+              <strong>Detachable Card Holder:</strong> A removable card holder
+              that can be used separately or with the main wallet for
+              flexibility.
+            </li>
+            <li>
+              <strong>ID Window:</strong> A transparent ID window in the card
+              holder allows easy access to your identification.
+            </li>
+            <li>
+              <strong>Convertible Use:</strong> Use the wallet as a traditional
+              bi-fold, a slim card holder, or a combination of both to suit your
+              needs.
+            </li>
+          </ul>
+        </div>
+        <div class="feature">
+          <h3>Storage and Organization</h3>
+          <ul>
+            <li><strong>Multiple Compartments:</strong></li>
+            <ul>
+              <li>
+                6 Card Slots: Securely hold your essential credit, debit, and ID
+                cards.
+              </li>
+              <li>
+                2 Bill Compartments: Separate sections for bills, receipts, or
+                different currencies.
+              </li>
+              <li>
+                Coin Pocket: A convenient zipped pocket for storing coins and
+                small items.
+              </li>
+              <li>
+                Hidden Pockets: Discreet slots for extra security, perfect for
+                emergency cash or important documents.
+              </li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="feature">
+          <h3>Aesthetic Appeal</h3>
+          <ul>
+            <li>
+              <strong>Elegant Design:</strong> Available in classic colors like
+              black, brown, and navy, complementing any attire from formal to
+              casual.
+            </li>
+            <li>
+              <strong>Signature Canvas:</strong> The interior features a
+              signature pattern, adding a unique and luxurious element.
+            </li>
+            <li>
+              <strong>Embossed Logo:</strong> A subtle, embossed logo adds
+              exclusivity and refinement.
+            </li>
+            <li>
+              <strong>Smooth Finish:</strong> The polished leather exterior is
+              stylish and comfortable to handle.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="usage">
+        <h2>Usage and Care</h2>
+        <p>
+          <strong>Everyday Use:</strong> Ideal for daily carry, whether for
+          business meetings, casual outings, or travel.
+        </p>
+        <p>
+          <strong>Care Instructions:</strong> Clean with a soft, damp cloth and
+          apply leather conditioner periodically. Avoid prolonged exposure to
+          moisture and direct sunlight.
+        </p>
+      </section>
+
+      <section class="benefits">
+        <h2>Additional Benefits</h2>
+        <ul>
+          <li>
+            <strong>Gift-Ready Packaging:</strong> Comes in an elegant box,
+            making it an excellent gift for birthdays, anniversaries, or other
+            special occasions.
+          </li>
+          <li>
+            <strong>Warranty:</strong> Includes a one-year warranty covering
+            manufacturing defects for peace of mind.
+          </li>
+        </ul>
+      </section>
+
+      <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <ul>
+          <li>
+            <strong>Sarah L.:</strong> "The 3 in 1 wallet is incredibly
+            versatile. I love using the card holder for quick errands and the
+            full wallet for business meetings."
+          </li>
+          <li>
+            <strong>Daniel M.:</strong> "The signature canvas interior is a
+            beautiful touch. It adds an element of luxury that sets this wallet
+            apart from others."
+          </li>
+          <li>
+            <strong>Alex J.:</strong> "This wallet is both stylish and
+            functional. The RFID protection gives me peace of mind, and the
+            quality is outstanding."
+          </li>
+        </ul>
+      </section>
+      <form action="cart.html">
+        <button class="fancy-button" type="submit">Go to Cart</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a></p>
+      </div>
+    </footer>
+
+    <script>
+      function updateTime() {
+        const timeElement = document.getElementById("time");
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+        timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+
+      setInterval(updateTime, 1000);
+      window.onload = updateTime;
+    </script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

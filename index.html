@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">E-Market</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                                <li><a class="dropdown-item" href="#!">Handbags</a></li>
+                                <li><a class="dropdown-item" href="/Sections/CoatsSection.html">Coats</a></li>
+                                <li><a class="dropdown-item" href="#!">Watches</a></li>
+                                <li><a class="dropdown-item" href="./Sections/pulloverCategories.html">Pullovers</a></li>
+                                <li><a class="dropdown-item" href="./TshirtsCategories.html">T-shirts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span id="cartCount" class="badge bg-dark text-white ms-1 rounded-pill" >0</span>
+                        </button>
+                        <a class="btn btn-outline-dark ms-2 d-flex align-items-center" href="javascript:void(0)" onclick="redirectToLoginPage()">
+                          <i class="fas fa-user me-1"></i>Kunde
+                      </a>
+                      
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://www.audemarspiguet.com/content/dam/ap/com/homepage/2024/apsc/01carouselHP_novelties_1000x1321_fev24_RO_26735SG-OO-1320SG-01_SDT_d02.jpg.transform.apcarouselv.jpg" alt="..." id="addToCartButton"/>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Fancy Watch</h5>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $500.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="text-center">  
+                            <a class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./assets/raybenSunglasses.png" onclick="imageClick('sunglasses-page.html')" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Stylish Sunglasses</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div> 
+                                        <div class="bi-star"></div>      
+                                        4/5                         
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                      <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div
+                          class="badge bg-dark text-white position-absolute"
+                          style="top: 0.5rem; right: 0.5rem"
+                        >
+                          Sale
+                        </div>
+                        <!-- Product image-->
+                        <img
+                          class="card-img-top"
+                          src="https://coach.scene7.com/is/image/Coach/cp442_lhn19_a0?$mobileProductTile$"
+                          alt="..."
+                          id="goToProduct"
+                        />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                          <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Wallet</h5>
+                            <!-- Product reviews-->
+                            <div
+                              class="d-flex justify-content-center small text-warning mb-2"
+                            >
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star"></div>
+                              <div class="bi-star"></div>
+                              3/5
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through"
+                              >$35.00</span
+                            >
+                            $15.00
+                            <h6>3 In 1 Wallet With Signature Canvas Interior</h6>
+                          </div>
+                        </div>
+                        <!-- Product actions-->
+                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                              <a class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <div class="col mb-5">
+                      <div class="card h-100">
+                        <!-- Product image-->
+                        <img
+                          class="card-img-top"
+                          src="https://static.zara.net/assets/public/af18/ea6a/b57245dd9a90/84119a3ab5aa/09065407505-e1/09065407505-e1.jpg?ts=1705055895643&w=750"
+                          alt="..."
+                          id="goToProduct1"
+                        />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                          <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">SHORT CORDUROY HAT</h5>
+                            <!-- Product reviews-->
+                            <div
+                              class="d-flex justify-content-center small text-warning mb-2"
+                            >
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              5/5
+                            </div>
+                            <!-- Product price-->
+                            $19.00
+                          </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <a href="bluePulloverPage.html">
+                            <img class="card-img-top" src="./assets/bluePullover.jpg" style="width: 270px; height: 350px" alt="..." />
+                            <!-- Product details-->
+                            </a>
+                            <div class="card mb-4 shadow-sm">
+                              <div class="card-body p-4 text-center">
+                                  <!-- Product name -->
+                                  <h5 class="fw-bolder mb-3 text-dark">Blue Pullover</h5>
+                                  <!-- Product reviews -->
+                                  <div class="d-flex justify-content-center small text-warning mb-3">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                  </div>
+                                  <!-- Product price -->
+                                  <div class="mb-3">
+                                      <span class="text-muted text-decoration-line-through">$20.00</span>
+                                      <span class="text-success fs-4 fw-bold">$18.00</span>
+                                  </div>
+                                  <!-- Product description -->
+                                  <p class="text-muted mb-3">Cozy up in style with our blue pullover, now available at a special discount. Perfect for those chilly days.</p>
+                                  
+                              </div>
+                          </div>
+                          
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="descriptionYellowTschirt.html">
+                            <img class="card-img-top" src="./assets/pngtree-handsome-man-in-blank-yellow-shirt-male-png-image_10681967.png" alt="..." />
+                            <!-- Product details-->
+                            </a>
+                            <div class="card mb-4 shadow-sm">
+                              <div class="card-body p-4 text-center">
+                                  <!-- Product name -->
+                                  <h5 class="fw-bolder mb-3 text-dark">Blue Pullover</h5>
+                                  <!-- Product reviews -->
+                                  <div class="d-flex justify-content-center small text-warning mb-3">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                  </div>
+                                  <!-- Product price -->
+                                  <div class="mb-3">
+                                      <span class="text-muted text-decoration-line-through">$20.00</span>
+                                      <span class="text-success fs-4 fw-bold">$18.00</span>
+                                  </div>
+                                  <!-- Product description -->
+                                  <p class="text-muted mb-3">Cozy up in style with our blue pullover, now available at a special discount. Perfect for those chilly days.</p>
+                                  
+                              </div>
+                          </div>
+                          
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a></div>
+                            </div>
+                            <div class="col mb-5" style="display: none; background-color: white; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                      <div class="card h-100">
+                          <!-- Sale badge-->
+                          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                          <!-- Product image-->
+                          <img class="card-img-top" src="./assets/darkGreyCoat.webp" alt="darkGreyCoat" onclick="imageClick('./Coats/darkGreyCoatPage.html')" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Grey Coat</h5>
+                                  <!-- Product price-->
+                                  <span class="text-muted text-decoration-line-through">$100.00</span>
+                                  $65.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a  class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5">
+                      <div class="card h-100">
+                          <!-- Product image-->
+                          <img class="card-img-top" src="./assets/KhakiCoatsForMen.jpg" onclick="imageClick('./Coats/KhakiCoatPage.html')" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Fancy winter khaki coat</h5>
+                                  <!-- Product price-->
+                                  $120.00 - $280.00
+                              </div>
+                              <!-- Description initially hidden -->
+                              <div class="description" style="display: none;">
+                                  <p>This is a high-quality khaki coat suitable for winter.</p>
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a  class="btn btn-outline-dark mt-auto addToCartButton">Add to cart</a></div>
+                          </div>
+                          <div class="col mb-5" style="display: none; background-color: white; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; E-market
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

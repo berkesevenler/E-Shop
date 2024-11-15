@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Watch Product Page</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative; /* Added position relative to allow absolute positioning */
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .product-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            margin-top: 20px;
+        }
+
+        .product-details h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .product-details p, .product-details ul {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .product-details ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .fancy-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            text-transform: uppercase;
+        }
+
+        .fancy-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Styling for time display */
+        .current-time {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fancy Watch</h1>
+    </header>
+
+    <main>
+        <div class="current-time" id="current-time"></div>
+        <img src="https://www.audemarspiguet.com/content/dam/ap/com/homepage/2024/apsc/01carouselHP_novelties_1000x1321_fev24_RO_26735SG-OO-1320SG-01_SDT_d02.jpg.transform.apcarouselv.jpg" alt="Fancy Watch" class="product-image">
+        <p style="text-align: center; color: #666;">Price: $500,000</p>
+
+        <button class="fancy-button" onclick="addToCart('Fancy Watch', 500000)">Add to Cart</button>
+     
+        <div class="product-details">
+            <h2>Design & Craftsmanship:</h2>
+            <p>The Elysium ChronoMaster boasts a 42mm case forged from 18k rose gold, polished to a mirror finish. Its sapphire crystal glass, anti-reflective and scratch-resistant, encases the intricately detailed dial. The dial features a deep midnight blue guilloché pattern, complemented by gold-plated indices and hands that glide gracefully across the surface. An open-heart complication at the 6 o'clock position reveals the mesmerizing movement within, while the date window discreetly nestled at 3 o'clock provides a practical touch of modernity.</p>
+
+            <h2>Movement:</h2>
+            <p>At the heart of the ChronoMaster lies the Caliber EC-8800, an in-house automatic movement renowned for its reliability and accuracy. With a power reserve of 72 hours and a frequency of 28,800 vibrations per hour, this mechanical marvel ensures precision timekeeping. The movement is visible through the exhibition case back, allowing admirers to appreciate the Côtes de Genève finishing and the hand-engraved rotor.</p>
+
+            <h2>Strap & Comfort:</h2>
+            <p>The watch is complemented by a hand-stitched alligator leather strap, dyed in a rich mahogany hue and lined with supple calfskin for maximum comfort. The deployment clasp, crafted from rose gold, ensures a secure fit while adding an extra touch of refinement.</p>
+
+            <h2>Special Features:</h2>
+            <ul>
+                <li><strong>Water Resistance:</strong> 50 meters, making it suitable for everyday wear.</li>
+                <li><strong>Luminous Markings:</strong> Super-LumiNova on the hands and indices ensures visibility in low light conditions.</li>
+                <li><strong>Chronograph Function:</strong> A sub-dial at 12 o'clock tracks elapsed minutes, while the central seconds hand measures elapsed seconds, catering to both form and function.</li>
+            </ul>
+
+            <p>The Elysium ChronoMaster is more than just a watch; it is a statement of sophistication and a testament to fine watchmaking. Whether adorning the wrist at a formal event or being cherished as part of a discerning collection, it promises to be a timeless companion for those who appreciate the art of precision.</p>
+        </div>
+
+        <!-- Form for going to cart -->
+        <form action="cart.html">
+            <button class="fancy-button" type="submit">Go to Cart</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2024 E-Shop
+    </footer>
+
+    <script>
+        // JavaScript to display current time
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const currentTimeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('current-time').textContent = currentTimeString;
+        }
+
+        // Initial call to display time
+        updateTime();
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+    </script>
+    <script src="js/scripts.js"></script> <!-- Assuming you have a separate script file -->
+</body>
+</html>

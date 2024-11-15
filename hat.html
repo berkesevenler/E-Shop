@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short Corduroy Hat</title>
+    <link rel="stylesheet" href="css/hat.css" />
+  </head>
+  <body>
+    <div id="time"></div>
+    <div class="container">
+      <h1>Short Corduroy Hat</h1>
+      <img
+        class="card-img-top center-image"
+        src="https://static.zara.net/assets/public/af18/ea6a/b57245dd9a90/84119a3ab5aa/09065407505-e1/09065407505-e1.jpg?ts=1705055895643&w=750"
+        alt="Short Corduroy Hat"
+      />
+      <section class="overview">
+        <button class="fancy-button" onclick="addToCart4('Hat', 18)">
+          Add to Cart
+        </button>
+        <h2>Overview</h2>
+        <p>
+          The Short Corduroy Hat is a stylish and versatile accessory, perfect
+          for adding a touch of retro charm to your wardrobe. Combining classic
+          corduroy fabric with modern design elements, this hat is a must-have
+          for any fashion-conscious individual.
+        </p>
+      </section>
+
+      <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+          <h3>Material and Craftsmanship</h3>
+          <ul>
+            <li>
+              <strong>High-Quality Corduroy:</strong> Made from premium corduroy
+              fabric, providing a soft texture and unique look.
+            </li>
+            <li>
+              <strong>Durable Construction:</strong> Expertly crafted for
+              long-lasting wear and durability.
+            </li>
+          </ul>
+        </div>
+        <div class="feature">
+          <h3>Design and Style</h3>
+          <ul>
+            <li>
+              <strong>Turn-Up Brim:</strong> Features a stylish turn-up brim
+              that adds a distinctive flair.
+            </li>
+            <li>
+              <strong>Adjustable Fit:</strong> An adjustable strap at the back
+              allows for a customized and comfortable fit.
+            </li>
+            <li>
+              <strong>Classic Colors:</strong> Available in navy, black, and
+              beige, making it easy to match with any outfit.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="usage">
+        <h2>Usage and Care</h2>
+        <p>
+          <strong>Everyday Use:</strong> Ideal for casual outings, streetwear
+          fashion, or adding a trendy touch to any ensemble.
+        </p>
+        <p>
+          <strong>Care Instructions:</strong> Spot clean with a damp cloth and
+          avoid machine washing. Store in a cool, dry place away from direct
+          sunlight.
+        </p>
+      </section>
+
+      <section class="benefits">
+        <h2>Additional Benefits</h2>
+        <ul>
+          <li>
+            <strong>Unisex Design:</strong> Suitable for both men and women,
+            making it a versatile addition to any wardrobe.
+          </li>
+          <li>
+            <strong>Gift-Ready Packaging:</strong> Comes in attractive
+            packaging, making it a perfect gift for friends and family.
+          </li>
+        </ul>
+      </section>
+
+      <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <ul>
+          <li>
+            <strong>Emma K.:</strong> "I love the retro vibe of this hat. The
+            corduroy fabric is so soft, and the adjustable fit makes it super
+            comfortable."
+          </li>
+          <li>
+            <strong>John D.:</strong> "This hat quickly became my go-to
+            accessory. It’s stylish and versatile, and I get compliments every
+            time I wear it."
+          </li>
+          <li>
+            <strong>Sophia L.:</strong> "The turn-up brim is a great feature. It
+            adds a unique touch and makes it stand out from other caps."
+          </li>
+        </ul>
+      </section>
+      <form action="cart.html">
+        <button class="fancy-button" type="submit">Go to Cart</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a></p>
+      </div>
+    </footer>
+
+    <script>
+      function updateTime() {
+        const timeElement = document.getElementById("time");
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+        timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+
+      setInterval(updateTime, 1000);
+      window.onload = updateTime;
+    </script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

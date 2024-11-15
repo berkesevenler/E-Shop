@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunglasses Page</title>
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative; /* Added position relative to allow absolute positioning */
+      }
+
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #333;
+      }
+
+      .product-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-details {
+        margin-top: 20px;
+      }
+
+      .product-details h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        color: #333;
+      }
+
+      .product-details p,
+      .product-details ul {
+        margin-top: 10px;
+        color: #666;
+      }
+
+      .product-details ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+
+      .fancy-button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+        text-transform: uppercase;
+      }
+
+      .fancy-button:hover {
+        background-color: #555;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+
+      /* Styling for time display */
+      .current-time {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 18px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Stylish Sunglasses</h1>
+    </header>
+
+    <main>
+      <div class="current-time" id="current-time"></div>
+      <img
+        src="https://images2.ray-ban.com//cdn-record-files-pi/5788c937-7802-46b5-8559-a5b500c64d08/2f4b27cb-059e-4a28-b750-ad2001776446/0RB3548N__001__STD__shad__qt.png?impolicy=RB_Product_clone&width=2048&bgc=%23f2f2f2"
+        alt="Stylish Sunglasses"
+        class="product-image"
+      />
+      <p style="text-align: center; color: #666">Price: $18</p>
+
+      <button
+        class="fancy-button"
+        onclick="addToCart1('Stylish Sunglasses', 18)"
+      >
+        Add to Cart
+      </button>
+
+      <div class="product-details">
+        <h2>Design & Aesthetics:</h2>
+        <p>
+          The Vanguard Eclipse features a sleek, oversized frame crafted from a
+          luxurious combination of titanium and acetate. Its matte black finish,
+          complemented by subtle gunmetal details, exudes sophisticated style
+          without overwhelming.
+        </p>
+
+        <p>
+          The lenses are made from high-grade polarized sapphire crystal,
+          offering exceptional clarity and UV protection. With a gradient tint
+          that transitions smoothly from deep charcoal to clear, these lenses
+          enhance both style and visibility. An anti-reflective coating ensures
+          crystal-clear vision even in bright sunlight.
+        </p>
+
+        <h2>Craftsmanship & Comfort:</h2>
+        <p>
+          Each pair of Vanguard Eclipse sunglasses is meticulously handcrafted
+          with precision-molded frames that contour effortlessly to the face.
+          Adjustable hypoallergenic silicone nose pads provide all-day comfort.
+          Custom-engraved temples add artisanal flair, ensuring each pair is a
+          unique masterpiece.
+        </p>
+
+        <h2>Special Features:</h2>
+        <ul>
+          <li>
+            <strong>Advanced Polarization:</strong> Reduces glare from
+            reflective surfaces, enhancing visual clarity.
+          </li>
+          <li>
+            <strong>Scratch-Resistant Coating:</strong> Protects against
+            scratches and impacts, maintaining pristine condition.
+          </li>
+          <li>
+            <strong>Hydrophobic Treatment:</strong> Repels water and oil, making
+            lenses easy to clean and maintaining clarity.
+          </li>
+          <li>
+            <strong>Lightweight Design:</strong> Robust yet lightweight,
+            weighing only 28 grams for comfort and durability.
+          </li>
+        </ul>
+
+        <h2>Versatility & Style:</h2>
+        <p>
+          Designed to elevate any ensemble, from casual streetwear to elegant
+          attire. The timeless silhouette and contemporary design make them a
+          versatile accessory for any occasion.
+        </p>
+
+        <p>
+          Each pair includes a premium leather case embossed with the Vanguard
+          logo, and a microfiber cleaning cloth to maintain impeccable
+          condition. The Vanguard Eclipse Sunglasses aren’t just an accessory;
+          they’re a statement of style and sophistication for those who dare to
+          stand out.
+        </p>
+      </div>
+
+      <!-- Form for going to cart -->
+      <form action="cart.html">
+        <button class="fancy-button" type="submit">Go to Cart</button>
+      </form>
+    </main>
+
+    <footer>&copy; 2024 E-Shop</footer>
+
+    <script>
+      // JavaScript to display current time
+      function updateTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+        const currentTimeString = `${hours}:${minutes}:${seconds}`;
+        document.getElementById("current-time").textContent = currentTimeString;
+      }
+
+      // Initial call to display time
+      updateTime();
+
+      // Update time every second
+      setInterval(updateTime, 1000);
+    </script>
+    <script src="js/scripts.js"></script>
+    <!-- Assuming you have a separate script file -->
+  </body>
+</html>
