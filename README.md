@@ -1,18 +1,5 @@
 # E-SHOP
 
-# Team-Members
-
-Elvin Alirzayev
-1299584;fdlt3669
-
-Berke Sevenler
-1378788;fdlt3885
-
-Mohamed Yahya Dahi
-1320480;fdai6618
-
-Haytham Daoula
-1400719;fdai7207
 
 # E-SHOP
 
